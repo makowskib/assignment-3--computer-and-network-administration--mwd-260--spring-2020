@@ -16,42 +16,59 @@ ssh roy@user-bauhaus.cs.hartford.edu
 Write a script that recursively copies all the files in one folder to another folder. The names of both folders should be arguments to the script. (_`12` pts_)
 
 ```
+cp -r first_file second_file
 ```
 
 ### Question 2
 Write a script that checks whether a program exists on your machine. If it doesn’t, it should try to fetch the program via `apt install`. (_`12` pts_)
 
 ```
+if 
+echo "program exists"
+fi
+echo "program does not exist... installing..."
+sudo apt install
+
 ```
 
 ### Question 3
 Write a command that will create an empty file with a `.txt` extension named after the current folder. (_`12` pts_)
 
 ```
+touch file.txt
 ```
 
 ### Question 4
 Write a command that will recursively remove files with the `.thumbs` extension from the current folder. (_`12` pts_)
 
 ```
+rm  .-name"*.thumbs"
 ```
 
 ### Question 5
 Write a command that will recursively remove empty folders from the current folder. (_`12` pts_)
 
 ```
+find . -type d -empty -delete
 ```
 
 ### Question 6
 Write a script that reports every file name in a folder as two items: the filename and its extension. Each item should appear on a new line. (_`12` pts_)
 
 ```
+ls
 ```
 
 ### Question 7
 Write a script that requests the user answer `y` or `n` to a prompt, and only exits when either of the two responses is entered. The user’s response should be echoed to the screen _before_ the program exits. (_`28` pts_)
 
 ```
+echo "Do you wish to continue? 'y' or 'n'"
+
+read input
+
+echo "You answered $input"
+exit 0
 ```
 
 ## ❖・Due・❖
